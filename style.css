@@ -10,7 +10,6 @@ html {
 }
 
 .container {
-    border: 1px solid red;
     min-width: 1440px;
     height: 100vh;
     align-content: center;
@@ -35,7 +34,7 @@ body {
     max-width: 40ch;
     color: hsl(333, 80%, 67%);
     line-height: 1.2rem;
-    max-width: 700;
+    font-weight: 700;
     font-weight: 600;
 }
 
@@ -129,4 +128,91 @@ span {
     color: hsl(333, 80%, 67%);
 }
 
-@media only screen and (max-width: 400px)
+@media only screen and (max-width: 400px) {
+    body {
+        background-image: url(images/bg-pattern-bottom-mobile.svg), url(images/bg-pattern-top-mobile.svg);
+        background-position: bottom right, top left;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 100px 100px cover;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        min-width: 375px;
+        height: 0vh;
+    }
+
+    .flexbox {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexbox-stars1 {
+        padding-right: 0;
+    }
+
+    .flexbox-stars2 {
+        padding-left: 0;
+    }
+
+    .flexbox-stars3 {
+        padding-left: 0;
+    }
+
+    .rated-reviews, .rated-reports, .rated-besttech {
+        height: 4rem;
+        width: 20rem;
+        text-align: center;
+        justify-self: center;
+    }
+
+    .flex-star {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .p-principal {
+        max-width: 32ch;
+        text-align: center;
+        justify-self: center;
+        padding-bottom: 2rem;
+    }
+    
+    #titulo {
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+    .p-colton, .p-anne {
+        max-width: 28ch;
+    }
+
+    .p-irene {
+        max-width: 27ch;
+    }
+
+    .card-colton, .card-irene, .card-anne {
+        width: 17rem;
+        align-self: center;
+    }
+
+    .container-cards {
+        gap: 0;
+        padding-top: 1.2rem;
+    }
+
+    .card-irene {
+        margin-top: 1rem;
+    }
+
+    .card-anne {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+}
