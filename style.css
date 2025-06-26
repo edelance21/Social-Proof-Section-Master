@@ -170,7 +170,7 @@ span {
         width: 20rem;
         text-align: center;
         justify-items: auto;
-        justify-self: center;
+        margin: auto;
     }
 
     .flex-star {
